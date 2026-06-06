@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brownie Vibes – Homemade Brownies, Cakes & Café | Trichy</title>
+<meta name="description" content="Brownie Vibes – Trichy's most loved homemade brownies, customized birthday cakes, donuts, pizza & venue setups. FSSAI registered. Order on WhatsApp. Fridays Road, Thiruvanaikoil, Trichy.">
+<meta name="keywords" content="brownie vibes trichy, homemade brownies trichy, birthday cakes trichy, customized cakes thiruvanaikoil, brownie cafe trichy, venue setup trichy, chocolate cake trichy">
+<meta property="og:title" content="Brownie Vibes – Homemade Brownies & Cakes | Trichy">
+<meta property="og:description" content="Feeling Downie? Eat Brownie! Homemade brownies from ₹10. Custom cakes, venue setups, donuts & more. Trichy's sweetest spot.">
+<meta property="og:type" content="website">
+<meta name="geo.region" content="IN-TN">
+<meta name="geo.placename" content="Trichy">
+
+<!-- Schema Markup for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "Brownie Vibes Cafe",
+  "description": "Homemade brownies, customized cakes, donuts, pizza and venue setups in Trichy",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Fridays Road, Thiruvanaikoil",
+    "addressLocality": "Trichy",
+    "addressRegion": "Tamil Nadu",
+    "addressCountry": "IN"
+  },
+  "telephone": "+919842916379",
+  "servesCuisine": ["Desserts", "Bakery", "Cafe"],
+  "priceRange": "₹10 - ₹2000",
+  "openingHours": "Mo-Su 09:00-21:00",
+  "sameAs": ["https://www.instagram.com/_brownie_vibes_"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --brown-deep: #2C1A0E;
+  --brown-mid: #6B3A2A;
+  --brown-warm: #A0522D;
+  --caramel: #C8860A;
+  --gold: #D4A017;
+  --cream: #FDF6EC;
+  --pink-soft: #F9E8E0;
+  --pink-bright: #E8637A;
+  --choc-dark: #1A0A00;
+  --white: #FFFFFF;
+  --text-dark: #1C1008;
+  --text-mid: #5C3D2E;
+  --shadow-warm: 0 20px 60px rgba(44,26,14,0.15);
+  --shadow-hover: 0 30px 80px rgba(44,26,14,0.25);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--text-dark);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* CUSTOM CURSOR */
+.cursor {
+  width: 12px; height: 12px;
+  background: var(--caramel);
+  border-radius: 50%;
+  position: fixed;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 99999;
+  transition: transform 0.15s ease;
+  mix-blend-mode: multiply;
+}
+.cursor-ring {
+  width: 36px; height: 36px;
+  border: 2px solid var(--brown-warm);
+  border-radius: 50%;
+  position: fixed;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 99998;
+  transition: all 0.25s ease;
+  opacity: 0.6;
+}
+body:hover .cursor { transform: scale(1); }
+a:hover ~ .cursor, button:hover ~ .cursor { transform: scale(2.5); }
+
+/* NOISE TEXTURE OVERLAY */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 0 5%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(253,246,236,0.92);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(168,82,45,0.12);
+  transition: all 0.3s ease;
+}
+nav.scrolled {
+  height: 60px;
+  background: rgba(253,246,236,0.98);
+  box-shadow: 0 4px 30px rgba(44,26,14,0.08);
+}
+.nav-logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  color: var(--brown-mid);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+.nav-logo span { color: var(--caramel); }
+.nav-links { display: flex; gap: 2.5rem; list-style: none; align-items: center; }
+.nav-links a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-mid);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  position: relative;
+  transition: color 0.3s;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0;
+  width: 0; height: 1.5px;
+  background: var(--caramel);
+  transition: width 0.3s ease;
+}
+.nav-links a:hover { color: var(--caramel); }
+.nav-links a:hover::after { width: 100%; }
+.nav-cart {
+  background: var(--brown-mid);
+  color: var(--cream);
+  border: none;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.nav-cart:hover {
+  background: var(--caramel);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(200,134,10,0.35);
+}
+.cart-count {
+  background: var(--pink-bright);
+  color: white;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -6px; right: -6px;
+  transition: transform 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
+}
+.cart-count.bump { animation: cartBump 0.4s cubic-bezier(0.68,-0.55,0.27,1.55); }
+@keyframes cartBump {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.6); }
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 100px 5% 60px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--cream) 0%, var(--pink-soft) 60%, #f0d4c8 100%);
+}
+.hero-bg-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200,134,10,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-bg-circle:nth-child(1) { width: 700px; height: 700px; top: -200px; right: -100px; }
+.hero-bg-circle:nth-child(2) { width: 400px; height: 400px; bottom: -100px; left: 10%; background: radial-gradient(circle, rgba(232,99,122,0.08) 0%, transparent 70%); }
+
+.hero-content { position: relative; z-index: 2; }
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(200,134,10,0.12);
+  border: 1px solid rgba(200,134,10,0.3);
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--caramel);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  animation: fadeSlideUp 0.8s ease both;
+}
+.hero-badge::before { content: '✦'; font-size: 0.7rem; }
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 1.05;
+  color: var(--brown-deep);
+  margin-bottom: 1rem;
+  animation: fadeSlideUp 0.8s ease 0.1s both;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--caramel);
+  display: block;
+}
+.hero-tagline {
+  font-size: 1.15rem;
+  color: var(--text-mid);
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  animation: fadeSlideUp 0.8s ease 0.2s both;
+}
+.hero-sub {
+  font-size: 0.9rem;
+  color: var(--brown-warm);
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: fadeSlideUp 0.8s ease 0.25s both;
+}
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  animation: fadeSlideUp 0.8s ease 0.3s both;
+}
+
+.btn-primary {
+  background: var(--brown-mid);
+  color: white;
+  padding: 16px 36px;
+  border: none;
+  border-radius: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.35s cubic-bezier(0.34,1.56,0.64,1);
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--caramel);
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+.btn-primary:hover::before { transform: translateX(0); }
+.btn-primary span { position: relative; z-index: 1; }
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(107,58,42,0.3); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--brown-mid);
+  padding: 16px 36px;
+  border: 2px solid var(--brown-mid);
+  border-radius: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background: var(--pink-soft);
+  border-color: var(--caramel);
+  color: var(--caramel);
+  transform: translateY(-3px);
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 3rem;
+  animation: fadeSlideUp 0.8s ease 0.4s both;
+}
+.stat { text-align: left; }
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--caramel);
+  line-height: 1;
+}
+.stat-label { font-size: 0.78rem; color: var(--text-mid); margin-top: 2px; text-transform: uppercase; letter-spacing: 0.05em; }
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: fadeSlideUp 0.8s ease 0.2s both;
+}
+.hero-logo-big {
+  width: 380px;
+  height: 380px;
+  background: linear-gradient(145deg, #fff 0%, var(--pink-soft) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-warm), inset 0 0 60px rgba(200,134,10,0.05);
+  position: relative;
+  animation: floatAnim 4s ease-in-out infinite;
+}
+@keyframes floatAnim {
+  0%,100% { transform: translateY(0) rotate(-1deg); }
+  50% { transform: translateY(-18px) rotate(1deg); }
+}
+.hero-logo-big img {
+  width: 280px;
+  height: 280px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.hero-float-badge {
+  position: absolute;
+  background: white;
+  border-radius: 16px;
+  padding: 12px 20px;
+  box-shadow: 0 10px 40px rgba(44,26,14,0.15);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--brown-mid);
+  animation: floatAnim2 3.5s ease-in-out infinite;
+}
+@keyframes floatAnim2 {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.hero-float-badge.badge-1 { top: 30px; right: -20px; }
+.hero-float-badge.badge-2 { bottom: 60px; left: -30px; animation-delay: 1.5s; }
+.hero-float-badge .badge-icon { font-size: 1.4rem; }
+
+/* MARQUEE */
+.marquee-section {
+  background: var(--brown-mid);
+  padding: 14px 0;
+  overflow: hidden;
+  position: relative;
+}
+.marquee-track {
+  display: flex;
+  gap: 0;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-item {
+  color: var(--cream);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+.marquee-item::after { content: '✦'; color: var(--gold); font-size: 0.7rem; }
+
+/* SECTION STYLES */
+section { padding: 100px 5%; }
+.section-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--caramel);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-label::before { content: ''; width: 30px; height: 1.5px; background: var(--caramel); }
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: var(--brown-deep);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+.section-title em { font-style: italic; color: var(--caramel); }
+.section-sub {
+  font-size: 1rem;
+  color: var(--text-mid);
+  max-width: 540px;
+  line-height: 1.7;
+}
+
+/* MENU SECTION */
+.menu-section { background: white; }
+.menu-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 2.5rem 0;
+}
+.menu-tab {
+  padding: 10px 24px;
+  border-radius: 50px;
+  border: 2px solid rgba(107,58,42,0.2);
+  background: transparent;
+  color: var(--text-mid);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.menu-tab.active, .menu-tab:hover {
+  background: var(--brown-mid);
+  border-color: var(--brown-mid);
+  color: white;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.menu-card {
+  background: var(--cream);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.34,1.56,0.64,1);
+  border: 1px solid rgba(107,58,42,0.08);
+  position: relative;
+  cursor: pointer;
+}
+.menu-card:hover {
+  transform: translateY(-12px) rotate(0.5deg);
+  box-shadow: var(--shadow-hover);
+}
+.menu-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  background: linear-gradient(135deg, var(--pink-soft), #e8d5c8);
+  position: relative;
+  overflow: hidden;
+}
+.menu-card-img-placeholder {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, var(--pink-soft) 0%, #e8c9b8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.menu-card-img-placeholder::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(44,26,14,0.15) 100%);
+}
+.menu-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(44,26,14,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+.menu-card:hover .menu-card-overlay { opacity: 1; }
+.menu-card-body { padding: 1.25rem; }
+.menu-card-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--brown-deep);
+  margin-bottom: 0.4rem;
+}
+.menu-card-desc {
+  font-size: 0.8rem;
+  color: var(--text-mid);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.menu-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-card-price {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--caramel);
+}
+.add-to-cart-btn {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  background: var(--brown-mid);
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1);
+}
+.add-to-cart-btn:hover {
+  background: var(--caramel);
+  transform: scale(1.2) rotate(90deg);
+}
+.menu-card-badge {
+  position: absolute;
+  top: 12px; left: 12px;
+  background: var(--pink-bright);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 50px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+/* QUOTES SECTION */
+.quotes-section {
+  background: var(--brown-deep);
+  padding: 100px 5%;
+  position: relative;
+  overflow: hidden;
+}
+.quotes-section::before {
+  content: '"';
+  position: absolute;
+  top: -40px; left: 5%;
+  font-family: 'Playfair Display', serif;
+  font-size: 30rem;
+  color: rgba(255,255,255,0.03);
+  line-height: 1;
+  pointer-events: none;
+}
+.quotes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.quote-card {
+  padding: 2.5rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  position: relative;
+  transition: all 0.4s ease;
+  background: rgba(255,255,255,0.03);
+}
+.quote-card:hover {
+  background: rgba(200,134,10,0.08);
+  border-color: rgba(200,134,10,0.3);
+  transform: translateY(-6px);
+}
+.quote-mark {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  color: var(--caramel);
+  line-height: 0.8;
+  margin-bottom: 1rem;
+  display: block;
+  opacity: 0.7;
+}
+.quote-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+.quote-author {
+  font-size: 0.8rem;
+  color: var(--caramel);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* SERVICES SECTION */
+.services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+.service-card {
+  background: var(--pink-soft);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.4s cubic-bezier(0.34,1.56,0.64,1);
+  border: 1px solid transparent;
+  cursor: default;
+}
+.service-card:hover {
+  background: white;
+  border-color: var(--caramel);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-warm);
+}
+.service-icon { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
+.service-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--brown-deep);
+  margin-bottom: 0.5rem;
+}
+.service-desc { font-size: 0.85rem; color: var(--text-mid); line-height: 1.6; }
+
+/* LOCATION SECTION */
+.location-section {
+  background: var(--brown-deep);
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+  align-items: center;
+}
+.location-info .section-label { color: var(--gold); }
+.location-info .section-label::before { background: var(--gold); }
+.location-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: white;
+}
+.location-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.location-detail:last-of-type { border-bottom: none; }
+.location-icon { font-size: 1.5rem; flex-shrink: 0; margin-top: 2px; }
+.location-detail-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 4px; }
+.location-detail-value { font-size: 1rem; color: rgba(255,255,255,0.85); line-height: 1.6; }
+.location-map {
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  border: 2px solid rgba(200,134,10,0.3);
+  background: rgba(255,255,255,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.map-placeholder {
+  text-align: center;
+  color: rgba(255,255,255,0.4);
+}
+.map-placeholder .map-pin { font-size: 3rem; display: block; margin-bottom: 1rem; }
+.map-placeholder p { font-size: 0.9rem; }
+.map-link {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--caramel);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.map-link:hover { background: var(--gold); transform: scale(1.05); }
+
+/* CONTACT */
+.contact-section { background: var(--pink-soft); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5%; margin-top: 3rem; align-items: center; }
+.contact-actions { display: flex; flex-direction: column; gap: 1rem; }
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.contact-btn-wa {
+  background: #25D366;
+  color: white;
+  box-shadow: 0 8px 30px rgba(37,211,102,0.3);
+}
+.contact-btn-wa:hover { transform: translateY(-4px); box-shadow: 0 15px 40px rgba(37,211,102,0.4); }
+.contact-btn-ig {
+  background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF);
+  color: white;
+  box-shadow: 0 8px 30px rgba(221,42,123,0.3);
+}
+.contact-btn-ig:hover { transform: translateY(-4px); box-shadow: 0 15px 40px rgba(221,42,123,0.4); }
+.contact-btn-ph {
+  background: var(--brown-mid);
+  color: white;
+  box-shadow: 0 8px 30px rgba(107,58,42,0.2);
+}
+.contact-btn-ph:hover { transform: translateY(-4px); background: var(--caramel); }
+.contact-btn-icon { font-size: 1.5rem; width: 40px; text-align: center; }
+.contact-btn-text-small { font-size: 0.75rem; font-weight: 400; opacity: 0.8; display: block; }
+
+.order-form-card {
+  background: white;
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-warm);
+}
+.order-form-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: var(--brown-deep);
+  margin-bottom: 1.5rem;
+}
+.form-group { margin-bottom: 1.25rem; }
+.form-group label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--text-mid); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid rgba(107,58,42,0.2);
+  border-radius: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  background: var(--cream);
+  transition: border-color 0.3s;
+  outline: none;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  border-color: var(--caramel);
+  box-shadow: 0 0 0 3px rgba(200,134,10,0.1);
+}
+.form-group textarea { height: 100px; resize: none; }
+
+/* CART SIDEBAR */
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  backdrop-filter: blur(4px);
+}
+.cart-overlay.open { opacity: 1; pointer-events: all; }
+.cart-sidebar {
+  position: fixed;
+  top: 0; right: 0;
+  width: 400px;
+  height: 100vh;
+  background: white;
+  z-index: 2001;
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.cart-sidebar.open { transform: translateX(0); }
+.cart-header {
+  padding: 2rem;
+  border-bottom: 1px solid rgba(107,58,42,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: var(--brown-deep);
+}
+.cart-close {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(107,58,42,0.2);
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  color: var(--text-mid);
+}
+.cart-close:hover { background: var(--pink-soft); }
+.cart-items { flex: 1; overflow-y: auto; padding: 1.5rem; }
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(107,58,42,0.08);
+  animation: fadeSlideUp 0.4s ease both;
+}
+.cart-item-emoji { font-size: 2rem; width: 50px; text-align: center; }
+.cart-item-info { flex: 1; }
+.cart-item-name { font-weight: 600; font-size: 0.95rem; color: var(--brown-deep); }
+.cart-item-price { font-size: 0.85rem; color: var(--caramel); font-weight: 600; }
+.cart-item-controls { display: flex; align-items: center; gap: 10px; }
+.qty-btn {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(107,58,42,0.2);
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  color: var(--brown-mid);
+}
+.qty-btn:hover { background: var(--brown-mid); color: white; border-color: var(--brown-mid); }
+.qty-num { font-weight: 600; font-size: 0.9rem; color: var(--text-dark); min-width: 20px; text-align: center; }
+.cart-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-mid);
+}
+.cart-empty span { font-size: 4rem; display: block; margin-bottom: 1rem; }
+.cart-footer { padding: 1.5rem; border-top: 1px solid rgba(107,58,42,0.1); }
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.cart-total-label { font-size: 1rem; font-weight: 600; color: var(--text-mid); }
+.cart-total-price { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--caramel); font-weight: 700; }
+.whatsapp-order-btn {
+  width: 100%;
+  background: #25D366;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s;
+  letter-spacing: 0.03em;
+}
+.whatsapp-order-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(37,211,102,0.4);
+  background: #1ebe5d;
+}
+
+/* OWNER LOGIN MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 3000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+}
+.modal-overlay.open { display: flex; }
+.modal-box {
+  background: white;
+  border-radius: 24px;
+  padding: 3rem;
+  width: 420px;
+  max-width: 90vw;
+  position: relative;
+  animation: modalPop 0.4s cubic-bezier(0.34,1.56,0.64,1);
+  box-shadow: 0 40px 100px rgba(0,0,0,0.3);
+}
+@keyframes modalPop {
+  0% { transform: scale(0.7) translateY(40px); opacity: 0; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+.modal-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--brown-deep);
+  margin-bottom: 0.5rem;
+}
+.modal-sub { font-size: 0.9rem; color: var(--text-mid); margin-bottom: 2rem; }
+.modal-close-btn {
+  position: absolute;
+  top: 1.5rem; right: 1.5rem;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(107,58,42,0.2);
+  background: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-mid);
+  transition: all 0.2s;
+}
+.modal-close-btn:hover { background: var(--pink-soft); }
+.login-error { color: var(--pink-bright); font-size: 0.85rem; margin-top: -0.5rem; margin-bottom: 1rem; display: none; }
+
+/* OWNER DASHBOARD */
+.owner-dashboard {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 4000;
+  background: #f8f4ef;
+  overflow-y: auto;
+}
+.owner-dashboard.open { display: block; }
+.owner-nav {
+  background: var(--brown-deep);
+  padding: 0 3%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.owner-nav-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: var(--cream);
+}
+.owner-nav-title span { color: var(--caramel); }
+.owner-nav-right { display: flex; gap: 1rem; align-items: center; }
+.owner-logout-btn {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 8px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  transition: all 0.3s;
+}
+.owner-logout-btn:hover { background: rgba(255,255,255,0.2); }
+.owner-content { padding: 3rem 3%; }
+.owner-section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--brown-deep);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.owner-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
+.owner-card {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(44,26,14,0.08);
+  position: relative;
+  border: 1.5px solid transparent;
+  transition: border-color 0.3s;
+}
+.owner-card:hover { border-color: rgba(200,134,10,0.3); }
+.owner-card-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+.owner-card-emoji { font-size: 2.5rem; }
+.owner-card-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--brown-deep);
+}
+.owner-card-category { font-size: 0.78rem; color: var(--text-mid); text-transform: uppercase; letter-spacing: 0.05em; }
+.owner-price-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid rgba(107,58,42,0.2);
+  border-radius: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--caramel);
+  background: var(--cream);
+  outline: none;
+  transition: border-color 0.3s;
+  margin-bottom: 0.75rem;
+}
+.owner-price-input:focus { border-color: var(--caramel); }
+.owner-card-actions { display: flex; gap: 0.5rem; }
+.owner-save-btn {
+  flex: 1;
+  background: var(--brown-mid);
+  color: white;
+  border: none;
+  padding: 9px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.owner-save-btn:hover { background: var(--caramel); }
+.owner-delete-btn {
+  background: rgba(232,99,122,0.1);
+  color: var(--pink-bright);
+  border: 1px solid rgba(232,99,122,0.2);
+  padding: 9px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+.owner-delete-btn:hover { background: var(--pink-bright); color: white; }
+
+.add-item-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(44,26,14,0.08);
+  margin-bottom: 3rem;
+  border: 2px dashed rgba(200,134,10,0.3);
+}
+.add-item-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: var(--brown-deep);
+  margin-bottom: 1.5rem;
+}
+.add-item-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.owner-input {
+  padding: 12px 16px;
+  border: 1.5px solid rgba(107,58,42,0.2);
+  border-radius: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  background: var(--cream);
+  outline: none;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+.owner-input:focus { border-color: var(--caramel); }
+.owner-input-full { grid-column: 1 / -1; }
+.owner-add-btn {
+  background: var(--caramel);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.owner-add-btn:hover { background: var(--brown-mid); transform: scale(1.05); }
+
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: var(--brown-deep);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  z-index: 9000;
+  transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  pointer-events: none;
+}
+.toast.show { transform: translateX(-50%) translateY(0); }
+
+/* FOOTER */
+footer {
+  background: var(--choc-dark);
+  color: rgba(255,255,255,0.6);
+  padding: 60px 5% 30px;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.footer-brand .brand-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.2rem;
+  color: white;
+  display: block;
+  margin-bottom: 1rem;
+}
+.footer-brand .brand-name span { color: var(--caramel); }
+.footer-desc { font-size: 0.88rem; line-height: 1.7; margin-bottom: 1.5rem; }
+.footer-social { display: flex; gap: 0.75rem; }
+.social-btn {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+}
+.social-btn:hover { background: var(--caramel); border-color: var(--caramel); transform: translateY(-3px); }
+.footer-col h4 {
+  color: white;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 0.7rem; }
+.footer-col ul li a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.3s;
+}
+.footer-col ul li a:hover { color: var(--caramel); }
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.footer-bottom a { color: var(--caramel); text-decoration: none; }
+
+/* SCROLL REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeSlideUp {
+  0% { opacity: 0; transform: translateY(24px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* FSSAI BADGE */
+.fssai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(37,211,102,0.1);
+  border: 1px solid rgba(37,211,102,0.3);
+  padding: 5px 14px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  color: #25a057;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* HAMBURGER */
+.hamburger { display: none; cursor: pointer; background: none; border: none; flex-direction: column; gap: 5px; padding: 5px; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--brown-mid); transition: all 0.3s; }
+
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; text-align: center; padding-top: 120px; }
+  .hero-actions { justify-content: center; }
+  .hero-stats { justify-content: center; }
+  .hero-visual { display: none; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .quotes-grid { grid-template-columns: 1fr; }
+  .location-section { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+  .cart-sidebar { width: 100%; }
+}
+
+/* Owner quick-access link */
+.owner-link {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.owner-link:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">✓ Added to cart!</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#" class="nav-logo">Brownie <span>Vibes</span></a>
+  <ul class="nav-links">
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#location">Find Us</a></li>
+    <li><a href="#contact">Order</a></li>
+  </ul>
+  <button class="nav-cart" onclick="toggleCart()">
+    🛒 <span>Cart</span>
+    <span class="cart-count" id="cartCount">0</span>
+  </button>
+  <button class="hamburger" onclick="toggleMobileMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-circle"></div>
+  <div class="hero-bg-circle"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">FSSAI Registered · Delivery All Over India</div>
+    <div class="fssai-badge">✓ Food Safety Certified</div>
+    <h1>
+      Feeling Downie?
+      <em>Eat Brownie.</em>
+    </h1>
+    <p class="hero-tagline">Trichy's most loved homemade brownies, custom cakes & café delights</p>
+    <p class="hero-sub">📍 Fridays Road, Thiruvanaikoil, Trichy</p>
+    <div class="hero-actions">
+      <a href="#menu" class="btn-primary"><span>🍫 Explore Menu</span></a>
+      <a href="https://wa.me/919842916379" target="_blank" class="btn-outline">💬 Order on WhatsApp</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">₹10</div>
+        <div class="stat-label">Starts At</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">166+</div>
+        <div class="stat-label">Happy Posts</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Homemade Love</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-logo-big">
+      <!-- Logo placeholder – replace src with actual logo -->
+      <div style="text-align:center;">
+        <div style="font-size:6rem;">🍫</div>
+        <div style="font-family:'Dancing Script',cursive;font-size:2rem;color:var(--brown-mid);margin-top:0.5rem;">Brownie Vibes</div>
+      </div>
+    </div>
+    <div class="hero-float-badge badge-1">
+      <span class="badge-icon">🎂</span>
+      <div><strong>Custom Cakes</strong><br><small style="color:var(--text-mid);font-weight:400;">Made to order</small></div>
+    </div>
+    <div class="hero-float-badge badge-2">
+      <span class="badge-icon">🎪</span>
+      <div><strong>Venue Setup</strong><br><small style="color:var(--text-mid);font-weight:400;">Birthdays & events</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marqueeTrack">
+    <span class="marquee-item">Homemade Brownies</span>
+    <span class="marquee-item">Custom Birthday Cakes</span>
+    <span class="marquee-item">Chocolate Fountain</span>
+    <span class="marquee-item">Venue Decoration</span>
+    <span class="marquee-item">Donuts & Cookies</span>
+    <span class="marquee-item">Mini Burgers</span>
+    <span class="marquee-item">Pizza</span>
+    <span class="marquee-item">FSSAI Registered</span>
+    <span class="marquee-item">Delivery All Over India</span>
+    <span class="marquee-item">Trichy's Sweetest Spot</span>
+    <!-- duplicate for infinite scroll -->
+    <span class="marquee-item">Homemade Brownies</span>
+    <span class="marquee-item">Custom Birthday Cakes</span>
+    <span class="marquee-item">Chocolate Fountain</span>
+    <span class="marquee-item">Venue Decoration</span>
+    <span class="marquee-item">Donuts & Cookies</span>
+    <span class="marquee-item">Mini Burgers</span>
+    <span class="marquee-item">Pizza</span>
+    <span class="marquee-item">FSSAI Registered</span>
+    <span class="marquee-item">Delivery All Over India</span>
+    <span class="marquee-item">Trichy's Sweetest Spot</span>
+  </div>
+</div>
+
+<!-- MENU SECTION -->
+<section class="menu-section" id="menu">
+  <div class="section-label">Our Menu</div>
+  <h2 class="section-title">Made with <em>love</em> & chocolate</h2>
+  <p class="section-sub">Every bite crafted fresh in our home kitchen. Real ingredients, real flavour, real love.</p>
+
+  <div class="menu-tabs">
+    <button class="menu-tab active" onclick="filterMenu('all', this)">All Items</button>
+    <button class="menu-tab" onclick="filterMenu('brownies', this)">Brownies</button>
+    <button class="menu-tab" onclick="filterMenu('cakes', this)">Cakes</button>
+    <button class="menu-tab" onclick="filterMenu('cookies', this)">Cookies & Donuts</button>
+    <button class="menu-tab" onclick="filterMenu('savory', this)">Savory</button>
+  </div>
+
+  <div class="menu-grid" id="menuGrid"></div>
+</section>
+
+<!-- QUOTES SECTION -->
+<section class="quotes-section">
+  <div class="quotes-grid">
+    <div class="quote-card">
+      <span class="quote-mark">"</span>
+      <p class="quote-text">Life is short. Eat the brownie first.</p>
+      <span class="quote-author">— Brownie Vibes Mantra</span>
+    </div>
+    <div class="quote-card">
+      <span class="quote-mark">"</span>
+      <p class="quote-text">A cake is just a reason to gather the people you love in one place.</p>
+      <span class="quote-author">— Every Birthday Ever</span>
+    </div>
+    <div class="quote-card">
+      <span class="quote-mark">"</span>
+      <p class="quote-text">Chocolate doesn't ask silly questions. Chocolate understands.</p>
+      <span class="quote-author">— A Very Wise Person</span>
+    </div>
+    <div class="quote-card">
+      <span class="quote-mark">"</span>
+      <p class="quote-text">Stressed spelled backwards is desserts. Coincidence? We think not.</p>
+      <span class="quote-author">— Sweet Wisdom</span>
+    </div>
+    <div class="quote-card">
+      <span class="quote-mark">"</span>
+      <p class="quote-text">The secret ingredient is always love. And chocolate. Mostly chocolate.</p>
+      <span class="quote-author">— Monisha, Brownie Vibes</span>
+    </div>
+    <div class="quote-card">
+      <span class="quote-mark">"</span>
+      <p class="quote-text">Home is where the brownie is warm and the memories are sweeter.</p>
+      <span class="quote-author">— Brownie Vibes</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services">
+  <div class="section-label">What We Do</div>
+  <h2 class="section-title">More than just <em>brownies</em></h2>
+  <p class="section-sub">From your morning craving to your biggest birthday bash — we've got every sweet moment covered.</p>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <span class="service-icon">🍫</span>
+      <div class="service-title">Homemade Brownies</div>
+      <div class="service-desc">Rich, fudgy, oven-fresh brownies starting at just ₹10. The OG Brownie Vibes experience.</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🎂</span>
+      <div class="service-title">Custom Birthday Cakes</div>
+      <div class="service-desc">Fully personalized cakes for every theme, age, and occasion. You dream it, we bake it.</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🎪</span>
+      <div class="service-title">Venue Setup & Decoration</div>
+      <div class="service-desc">Complete birthday & event setups with balloon décor, lights, photo zones and more.</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🍩</span>
+      <div class="service-title">Donuts & Cookies</div>
+      <div class="service-desc">Glazed donuts, choco-chip cookies, and signature treats baked fresh daily.</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🍕</span>
+      <div class="service-title">Pizza & Mini Burgers</div>
+      <div class="service-desc">Because every good celebration needs savoury too! Mini burgers and loaded pizzas.</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🍫</span>
+      <div class="service-title">Chocolate Fountain</div>
+      <div class="service-desc">The showstopper of every event — a gorgeous flowing chocolate fountain for dipping.</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🚚</span>
+      <div class="service-title">Pan-India Delivery</div>
+      <div class="service-desc">Craving brownies from another city? We deliver all over India — packed with love.</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">📸</span>
+      <div class="service-title">Content Creation</div>
+      <div class="service-desc">Follow us on Instagram @_brownie_vibes_ for drool-worthy reels and cake reveals!</div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION SECTION -->
+<section class="location-section" id="location">
+  <div class="location-info reveal">
+    <div class="section-label">Find Us</div>
+    <h2 class="location-title">Come visit us<br>in Trichy 📍</h2>
+    <div class="location-detail">
+      <span class="location-icon">📍</span>
+      <div>
+        <div class="location-detail-label">Address</div>
+        <div class="location-detail-value">Brownie Vibes Cafe<br>Fridays Road, Thiruvanaikoil<br>Trichy, Tamil Nadu</div>
+      </div>
+    </div>
+    <div class="location-detail">
+      <span class="location-icon">📞</span>
+      <div>
+        <div class="location-detail-label">Call / WhatsApp</div>
+        <div class="location-detail-value"><a href="tel:+919842916379" style="color:var(--gold);text-decoration:none;">98429 16379</a><br><a href="tel:+919080332277" style="color:var(--gold);text-decoration:none;">90803 32277</a></div>
+      </div>
+    </div>
+    <div class="location-detail">
+      <span class="location-icon">⏰</span>
+      <div>
+        <div class="location-detail-label">Hours</div>
+        <div class="location-detail-value">Open Daily · 9 AM – 9 PM</div>
+      </div>
+    </div>
+    <div class="location-detail">
+      <span class="location-icon">📸</span>
+      <div>
+        <div class="location-detail-label">Instagram</div>
+        <div class="location-detail-value"><a href="https://instagram.com/_brownie_vibes_" target="_blank" style="color:var(--gold);text-decoration:none;">@_brownie_vibes_</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="location-map reveal">
+    <div class="map-placeholder">
+      <span class="map-pin">📍</span>
+      <p style="color:rgba(255,255,255,0.6);font-size:1rem;">Fridays Road, Thiruvanaikoil<br>Trichy, Tamil Nadu</p>
+      <a href="https://maps.google.com/?q=Brownie+Vibes+Cafe+Thiruvanaikoil+Trichy" target="_blank" class="map-link">Open in Google Maps 🗺️</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / ORDER SECTION -->
+<section class="contact-section" id="contact">
+  <div class="section-label">Order Now</div>
+  <h2 class="section-title">Ready to <em>indulge?</em></h2>
+  <p class="section-sub">Place your order through WhatsApp or Instagram — Monisha personally handles every single order.</p>
+  <div class="contact-grid reveal">
+    <div class="contact-actions">
+      <a href="https://wa.me/919842916379?text=Hi%20Brownie%20Vibes!%20I'd%20like%20to%20place%20an%20order%20%F0%9F%AB%90" target="_blank" class="contact-btn contact-btn-wa">
+        <span class="contact-btn-icon">💬</span>
+        <div>
+          <span class="contact-btn-text-small">Chat & Order on</span>
+          WhatsApp — 98429 16379
+        </div>
+      </a>
+      <a href="https://instagram.com/_brownie_vibes_" target="_blank" class="contact-btn contact-btn-ig">
+        <span class="contact-btn-icon">📸</span>
+        <div>
+          <span class="contact-btn-text-small">DM us on</span>
+          Instagram — @_brownie_vibes_
+        </div>
+      </a>
+      <a href="tel:+919842916379" class="contact-btn contact-btn-ph">
+        <span class="contact-btn-icon">📞</span>
+        <div>
+          <span class="contact-btn-text-small">Call us directly</span>
+          98429 16379 / 90803 32277
+        </div>
+      </a>
+    </div>
+
+    <div class="order-form-card">
+      <div class="order-form-title">Quick Enquiry</div>
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" id="enquiryName" placeholder="e.g. Priya">
+      </div>
+      <div class="form-group">
+        <label>What are you looking for?</label>
+        <select id="enquiryType">
+          <option value="">Select category</option>
+          <option>Brownies</option>
+          <option>Birthday Cake</option>
+          <option>Venue Setup</option>
+          <option>Donuts & Cookies</option>
+          <option>Pizza / Mini Burgers</option>
+          <option>Chocolate Fountain</option>
+          <option>Custom Order</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message / Details</label>
+        <textarea id="enquiryMsg" placeholder="Tell us your date, theme, quantity..."></textarea>
+      </div>
+      <button class="btn-primary" onclick="sendWhatsAppEnquiry()" style="width:100%;justify-content:center;border-radius:12px;">
+        <span>Send via WhatsApp 💬</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="brand-name">Brownie <span>Vibes</span></span>
+      <p class="footer-desc">Trichy's home for handcrafted brownies, custom cakes, and unforgettable celebrations. FSSAI registered. Made with love by Monisha.</p>
+      <div class="footer-social">
+        <a href="https://instagram.com/_brownie_vibes_" target="_blank" class="social-btn">📸</a>
+        <a href="https://wa.me/919842916379" target="_blank" class="social-btn">💬</a>
+        <a href="tel:+919842916379" class="social-btn">📞</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="#menu">Brownies</a></li>
+        <li><a href="#menu">Birthday Cakes</a></li>
+        <li><a href="#menu">Cookies & Donuts</a></li>
+        <li><a href="#menu">Pizza & Burgers</a></li>
+        <li><a href="#services">Venue Setup</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="#location">Find Us</a></li>
+        <li><a href="#contact">Order Now</a></li>
+        <li><a href="https://instagram.com/_brownie_vibes_" target="_blank">Instagram</a></li>
+        <li><a href="javascript:void(0)" onclick="openOwnerLogin()">Owner Login</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Brownie Vibes, Trichy · Made with 🍫 &amp; ❤️</span>
+    <span>FSSAI Registered · <a href="javascript:void(0)" onclick="openOwnerLogin()">Owner Access</a></span>
+  </div>
+</footer>
+
+<!-- CART SIDEBAR -->
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h2>Your Cart 🛒</h2>
+    <button class="cart-close" onclick="toggleCart()">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <div class="cart-empty">
+      <span>🍫</span>
+      <p>Your cart is empty.<br>Add something delicious!</p>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span class="cart-total-label">Total</span>
+      <span class="cart-total-price" id="cartTotal">₹0</span>
+    </div>
+    <button class="whatsapp-order-btn" onclick="orderViaWhatsApp()">
+      💬 Order via WhatsApp
+    </button>
+  </div>
+</div>
+
+<!-- OWNER LOGIN MODAL -->
+<div class="modal-overlay" id="ownerLoginModal">
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeOwnerLogin()">✕</button>
+    <div class="modal-title">Owner Login</div>
+    <p class="modal-sub">Access the dashboard to manage your menu & prices.</p>
+    <div class="form-group">
+      <label>Username</label>
+      <input type="text" id="ownerUser" placeholder="Enter username" autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" id="ownerPass" placeholder="Enter password" onkeydown="if(event.key==='Enter')ownerLogin()">
+    </div>
+    <div class="login-error" id="loginError">❌ Incorrect credentials. Try again.</div>
+    <button class="btn-primary" onclick="ownerLogin()" style="width:100%;justify-content:center;border-radius:12px;margin-top:0.5rem;">
+      <span>Login to Dashboard</span>
+    </button>
+    <p style="font-size:0.78rem;color:var(--text-mid);margin-top:1.5rem;text-align:center;">Default: admin / brownievibes2025</p>
+  </div>
+</div>
+
+<!-- OWNER DASHBOARD -->
+<div class="owner-dashboard" id="ownerDashboard">
+  <nav class="owner-nav">
+    <div class="owner-nav-title">Brownie <span>Vibes</span> · Owner Dashboard</div>
+    <div class="owner-nav-right">
+      <span style="color:rgba(255,255,255,0.5);font-size:0.85rem;">Welcome, Monisha 👋</span>
+      <button class="owner-logout-btn" onclick="ownerLogout()">Logout</button>
+    </div>
+  </nav>
+  <div class="owner-content">
+
+    <!-- ADD NEW ITEM -->
+    <div class="add-item-card">
+      <div class="add-item-title">➕ Add New Menu Item</div>
+      <div class="add-item-grid">
+        <input class="owner-input" id="newItemName" placeholder="Item name (e.g. Red Velvet Brownie)">
+        <input class="owner-input" id="newItemPrice" placeholder="Price in ₹ (e.g. 80)" type="number">
+        <input class="owner-input owner-input-full" id="newItemDesc" placeholder="Short description (e.g. Rich red velvet with cream cheese frosting)">
+        <select class="owner-input" id="newItemCategory">
+          <option value="brownies">Brownies</option>
+          <option value="cakes">Cakes</option>
+          <option value="cookies">Cookies & Donuts</option>
+          <option value="savory">Savory</option>
+        </select>
+        <input class="owner-input" id="newItemEmoji" placeholder="Emoji icon (e.g. 🍫)">
+      </div>
+      <button class="owner-add-btn" onclick="addNewItem()">➕ Add to Menu</button>
+    </div>
+
+    <!-- EXISTING ITEMS -->
+    <div class="owner-section-title">📋 Manage Menu Items</div>
+    <div class="owner-grid" id="ownerMenuGrid"></div>
+
+  </div>
+</div>
+
+<script>
+// ==================== MENU DATA ====================
+// To update from GitHub: edit this menuData object and commit.
+// Items with prices auto-update on the website on next load.
+let menuData = [
+  { id: 1, name: "Classic Fudge Brownie", desc: "Original Brownie Vibes recipe — dense, gooey, and utterly addictive.", price: 10, category: "brownies", emoji: "🍫", badge: "From ₹10" },
+  { id: 2, name: "Dark Chocolate Brownie", desc: "Intense 70% dark chocolate brownie for the true chocoholic.", price: 30, category: "brownies", emoji: "🖤" },
+  { id: 3, name: "Nutella Swirl Brownie", desc: "Fudgy brownie with a generous Nutella ribbon swirled through.", price: 45, category: "brownies", emoji: "🌀" },
+  { id: 4, name: "Cream Cheese Brownie", desc: "Dense brownie with a silky cream cheese layer on top.", price: 50, category: "brownies", emoji: "🧀" },
+  { id: 5, name: "Custom Birthday Cake (0.5kg)", desc: "Fully personalized theme cake. DM for design options!", price: 450, category: "cakes", emoji: "🎂", badge: "Popular" },
+  { id: 6, name: "Chocolate Truffle Cake (1kg)", desc: "Rich layers of chocolate sponge and truffle ganache.", price: 800, category: "cakes", emoji: "🎂" },
+  { id: 7, name: "Butterscotch Cake (0.5kg)", desc: "Light, fluffy butterscotch sponge with crunchy praline.", price: 400, category: "cakes", emoji: "🍰" },
+  { id: 8, name: "Red Velvet Cake (1kg)", desc: "Classic red velvet with cream cheese frosting.", price: 850, category: "cakes", emoji: "❤️" },
+  { id: 9, name: "Choco-Chip Cookie", desc: "Loaded with chocolate chips, crispy edges, chewy centre.", price: 30, category: "cookies", emoji: "🍪" },
+  { id: 10, name: "Glazed Donut", desc: "Soft fluffy donuts with sugar glaze. Pick your flavour!", price: 40, category: "cookies", emoji: "🍩" },
+  { id: 11, name: "Brownie Cookie Sandwich", desc: "Two cookies hugging a brownie centre. Pure joy.", price: 60, category: "cookies", emoji: "🍪", badge: "New" },
+  { id: 12, name: "Mini Burger (2 pcs)", desc: "Bite-sized burgers with juicy patty and fresh veggies.", price: 80, category: "savory", emoji: "🍔" },
+  { id: 13, name: "Mini Pizza", desc: "Loaded mini pizzas with cheese pull guaranteed.", price: 120, category: "savory", emoji: "🍕" },
+];
+
+let cart = [];
+let currentCategory = 'all';
+let nextId = menuData.length + 1;
+
+// ==================== RENDER MENU ====================
+function renderMenu(category) {
+  currentCategory = category;
+  const grid = document.getElementById('menuGrid');
+  const items = category === 'all' ? menuData : menuData.filter(i => i.category === category);
+  grid.innerHTML = items.map(item => `
+    <div class="menu-card reveal" data-id="${item.id}">
+      ${item.badge ? `<div class="menu-card-badge">${item.badge}</div>` : ''}
+      <div class="menu-card-img-placeholder">${item.emoji}</div>
+      <div class="menu-card-overlay">
+        <button class="btn-primary" onclick="addToCart(${item.id})" style="transform:scale(0.9)"><span>+ Add to Cart</span></button>
+      </div>
+      <div class="menu-card-body">
+        <div class="menu-card-name">${item.name}</div>
+        <div class="menu-card-desc">${item.desc}</div>
+        <div class="menu-card-footer">
+          <div class="menu-card-price">₹${item.price}</div>
+          <button class="add-to-cart-btn" onclick="addToCart(${item.id})">+</button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+  setTimeout(triggerReveal, 50);
+}
+
+function filterMenu(cat, btn) {
+  document.querySelectorAll('.menu-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  renderMenu(cat);
+}
+
+// ==================== CART ====================
+function addToCart(id) {
+  const item = menuData.find(i => i.id === id);
+  if (!item) return;
+  const existing = cart.find(c => c.id === id);
+  if (existing) existing.qty++;
+  else cart.push({ ...item, qty: 1 });
+  updateCartUI();
+  showToast(`🍫 ${item.name} added!`);
+  const countEl = document.getElementById('cartCount');
+  countEl.textContent = cart.reduce((s,i) => s + i.qty, 0);
+  countEl.classList.add('bump');
+  setTimeout(() => countEl.classList.remove('bump'), 500);
+}
+
+function updateCartUI() {
+  const total = cart.reduce((s,i) => s + i.price * i.qty, 0);
+  document.getElementById('cartTotal').textContent = `₹${total}`;
+  document.getElementById('cartCount').textContent = cart.reduce((s,i) => s + i.qty, 0);
+  const container = document.getElementById('cartItems');
+  if (cart.length === 0) {
+    container.innerHTML = `<div class="cart-empty"><span>🍫</span><p>Your cart is empty.<br>Add something delicious!</p></div>`;
+    return;
+  }
+  container.innerHTML = cart.map(item => `
+    <div class="cart-item">
+      <div class="cart-item-emoji">${item.emoji}</div>
+      <div class="cart-item-info">
+        <div class="cart-item-name">${item.name}</div>
+        <div class="cart-item-price">₹${item.price} × ${item.qty} = ₹${item.price * item.qty}</div>
+      </div>
+      <div class="cart-item-controls">
+        <button class="qty-btn" onclick="changeQty(${item.id}, -1)">−</button>
+        <span class="qty-num">${item.qty}</span>
+        <button class="qty-btn" onclick="changeQty(${item.id}, 1)">+</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function changeQty(id, delta) {
+  const idx = cart.findIndex(c => c.id === id);
+  if (idx < 0) return;
+  cart[idx].qty += delta;
+  if (cart[idx].qty <= 0) cart.splice(idx, 1);
+  updateCartUI();
+}
+
+function toggleCart() {
+  document.getElementById('cartOverlay').classList.toggle('open');
+  document.getElementById('cartSidebar').classList.toggle('open');
+}
+
+function orderViaWhatsApp() {
+  if (cart.length === 0) { showToast('Your cart is empty!'); return; }
+  const total = cart.reduce((s,i) => s + i.price * i.qty, 0);
+  let msg = `Hello Brownie Vibes! 🍫 I'd like to order:\n\n`;
+  cart.forEach(i => { msg += `• ${i.name} × ${i.qty} = ₹${i.price * i.qty}\n`; });
+  msg += `\n*Total: ₹${total}*\nPlease confirm my order! 🙏`;
+  window.open(`https://wa.me/919842916379?text=${encodeURIComponent(msg)}`, '_blank');
+}
+
+// ==================== OWNER LOGIN ====================
+const OWNER_CREDS = { user: 'admin', pass: 'brownievibes2025' };
+
+function openOwnerLogin() {
+  document.getElementById('ownerLoginModal').classList.add('open');
+  document.getElementById('loginError').style.display = 'none';
+  document.getElementById('ownerUser').value = '';
+  document.getElementById('ownerPass').value = '';
+}
+
+function closeOwnerLogin() {
+  document.getElementById('ownerLoginModal').classList.remove('open');
+}
+
+function ownerLogin() {
+  const u = document.getElementById('ownerUser').value.trim();
+  const p = document.getElementById('ownerPass').value.trim();
+  if (u === OWNER_CREDS.user && p === OWNER_CREDS.pass) {
+    closeOwnerLogin();
+    openDashboard();
+  } else {
+    document.getElementById('loginError').style.display = 'block';
+  }
+}
+
+function ownerLogout() {
+  document.getElementById('ownerDashboard').classList.remove('open');
+  showToast('✓ Logged out successfully');
+}
+
+// ==================== OWNER DASHBOARD ====================
+function openDashboard() {
+  document.getElementById('ownerDashboard').classList.add('open');
+  renderOwnerGrid();
+}
+
+function renderOwnerGrid() {
+  const grid = document.getElementById('ownerMenuGrid');
+  grid.innerHTML = menuData.map(item => `
+    <div class="owner-card" id="ownerCard_${item.id}">
+      <div class="owner-card-head">
+        <div class="owner-card-emoji">${item.emoji}</div>
+        <div>
+          <div class="owner-card-name">${item.name}</div>
+          <div class="owner-card-category">${item.category}</div>
+        </div>
+      </div>
+      <label style="font-size:0.78rem;font-weight:600;color:var(--text-mid);text-transform:uppercase;letter-spacing:0.05em;display:block;margin-bottom:6px;">Price (₹)</label>
+      <input class="owner-price-input" id="price_${item.id}" value="${item.price}" type="number" min="0">
+      <label style="font-size:0.78rem;font-weight:600;color:var(--text-mid);text-transform:uppercase;letter-spacing:0.05em;display:block;margin-bottom:6px;margin-top:8px;">Description</label>
+      <input class="owner-price-input" id="desc_${item.id}" value="${item.desc}" style="font-size:0.85rem;color:var(--text-dark);font-weight:400;">
+      <div class="owner-card-actions" style="margin-top:8px;">
+        <button class="owner-save-btn" onclick="saveItem(${item.id})">💾 Save Changes</button>
+        <button class="owner-delete-btn" onclick="deleteItem(${item.id})">🗑️</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function saveItem(id) {
+  const item = menuData.find(i => i.id === id);
+  if (!item) return;
+  const newPrice = parseFloat(document.getElementById(`price_${id}`).value);
+  const newDesc = document.getElementById(`desc_${id}`).value;
+  if (!isNaN(newPrice) && newPrice >= 0) item.price = newPrice;
+  item.desc = newDesc;
+  // Re-render menu so price updates are visible to customer
+  renderMenu(currentCategory);
+  showToast(`✓ "${item.name}" updated!`);
+}
+
+function deleteItem(id) {
+  const item = menuData.find(i => i.id === id);
+  if (!item) return;
+  if (!confirm(`Delete "${item.name}"?`)) return;
+  menuData = menuData.filter(i => i.id !== id);
+  renderOwnerGrid();
+  renderMenu(currentCategory);
+  showToast(`🗑️ "${item.name}" deleted`);
+}
+
+function addNewItem() {
+  const name = document.getElementById('newItemName').value.trim();
+  const price = parseFloat(document.getElementById('newItemPrice').value);
+  const desc = document.getElementById('newItemDesc').value.trim();
+  const category = document.getElementById('newItemCategory').value;
+  const emoji = document.getElementById('newItemEmoji').value.trim() || '🍰';
+  if (!name || isNaN(price)) { showToast('⚠️ Name and price required!'); return; }
+  const newItem = { id: nextId++, name, price, desc: desc || 'Delicious homemade treat.', category, emoji };
+  menuData.push(newItem);
+  renderOwnerGrid();
+  renderMenu(currentCategory);
+  document.getElementById('newItemName').value = '';
+  document.getElementById('newItemPrice').value = '';
+  document.getElementById('newItemDesc').value = '';
+  document.getElementById('newItemEmoji').value = '';
+  showToast(`✓ "${name}" added to menu!`);
+}
+
+// ==================== ENQUIRY ====================
+function sendWhatsAppEnquiry() {
+  const name = document.getElementById('enquiryName').value.trim() || 'A customer';
+  const type = document.getElementById('enquiryType').value;
+  const msg = document.getElementById('enquiryMsg').value.trim();
+  const text = `Hi Brownie Vibes! 🍫\n\nMy name is ${name}.\nI'm interested in: ${type || 'General enquiry'}\n\n${msg ? 'Details: ' + msg : ''}\n\nPlease get back to me. Thank you! 🙏`;
+  window.open(`https://wa.me/919842916379?text=${encodeURIComponent(text)}`, '_blank');
+}
+
+// ==================== UTILS ====================
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+function triggerReveal() {
+  const els = document.querySelectorAll('.reveal:not(.revealed)');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); observer.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  els.forEach(el => observer.observe(el));
+}
+
+// Custom cursor
+document.addEventListener('mousemove', e => {
+  document.getElementById('cursor').style.left = e.clientX - 6 + 'px';
+  document.getElementById('cursor').style.top = e.clientY - 6 + 'px';
+  document.getElementById('cursorRing').style.left = e.clientX - 18 + 'px';
+  document.getElementById('cursorRing').style.top = e.clientY - 18 + 'px';
+});
+
+// Nav scroll
+window.addEventListener('scroll', () => {
+  document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 60);
+  triggerReveal();
+});
+
+// Mobile menu
+function toggleMobileMenu() {
+  const links = document.querySelector('.nav-links');
+  if (links.style.display === 'flex') {
+    links.style.display = 'none';
+  } else {
+    Object.assign(links.style, { display: 'flex', flexDirection: 'column', position: 'fixed', top: '72px', left: '0', right: '0', background: 'rgba(253,246,236,0.98)', padding: '2rem', gap: '1.5rem', backdropFilter: 'blur(20px)', zIndex: '999', borderBottom: '1px solid rgba(168,82,45,0.1)' });
+  }
+}
+
+// Init
+renderMenu('all');
+setTimeout(triggerReveal, 300);
+</script>
+</body>
+</html>

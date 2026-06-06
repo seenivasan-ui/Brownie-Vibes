@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream:#FDF8F0; --cream-dark:#F5ECD8;
+  --brown-900:#1A0A00; --brown-800:#2C1507; --brown-700:#4A2010; --brown-600:#6B3520;
+  --caramel:#C17F24; --gold:#D4A853; --gold-light:#F0CC7A;
+  --pink:#E8637A; --pink-light:#FDE8EC;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--brown-800);overflow-x:hidden;cursor:none;}
+*,*:hover{cursor:none!important;}
+::selection{background:var(--caramel);color:#fff;}
+::-webkit-scrollbar{width:5px;}
+::-webkit-scrollbar-track{background:var(--cream);}
+::-webkit-scrollbar-thumb{background:var(--caramel);border-radius:3px;}
+
+/* Custom cursor */
+.cursor-dot,.cursor-ring{position:fixed;border-radius:50%;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);transition:transform .12s ease;}
+.cursor-dot{width:10px;height:10px;background:var(--caramel);mix-blend-mode:multiply;}
+.cursor-ring{width:38px;height:38px;border:1.5px solid var(--brown-600);opacity:.4;transition:all .2s ease;}
+.cursor-dot.hov{width:18px;height:18px;background:var(--pink);}
+.cursor-ring.hov{width:56px;height:56px;border-color:var(--pink);opacity:.25;}
+
+/* Reveal animation */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);}
+.reveal.in{opacity:1;transform:none;}
+.reveal-d1{transition-delay:.1s;} .reveal-d2{transition-delay:.2s;} .reveal-d3{transition-delay:.3s;}
+
+/* Card hover image zoom */
+.pcard-img img{transition:transform .7s cubic-bezier(.34,1.56,.64,1);}
+.pcard:hover .pcard-img img{transform:scale(1.12) rotate(.8deg);}
+.pcard-overlay{opacity:0;transition:opacity .3s;}
+.pcard:hover .pcard-overlay{opacity:1;}
+
+/* Button shimmer */
+.shimmer{position:relative;overflow:hidden;}
+.shimmer::after{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);transform:skewX(-20deg);transition:left .55s ease;}
+.shimmer:hover::after{left:130%;}
